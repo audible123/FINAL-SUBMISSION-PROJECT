@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>किरण</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="transition animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="features.css" />
+    <link rel="stylesheet" href="about us.css">
+
+</head>
+
+<body>
+
+    <div id="preloader">
+    </div>
+    <section id="banner">
+        <img src="" alt="" class="logo">
+        <div class="banner-text">
+            <h1>किरण</h1>
+            <p>A Non Profit Website For Women Welfare to make women Self-Dependent</p>
+            <div class="banner-btn">
+                <a href="search_section.html"><span></span>Find Out</a>
+                <a href="about us.html"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="homepage.html">HOME</a> </li>
+                <li><a href="features.html">FEATURES</a> </li>
+                <li><a href="https://www.youtube.com/">TUTORIAL</a> </li>
+                <li><a href="register.html">BE A PART</a> </li>
+                <li><a href="contact_us.html">ADD A SCHEME</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="menu.png" id="denu">
+    </div>
+
+    <div class="container">
+        <section id="features">
+            <div class="row">
+                <h2 class="section-heading">FEATURES</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <span></span>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3>SECURED WITH BLOCKCHAIN</h3>
+                        <p>
+                            All the Data inputs are secured using blockchain technology.Your Personal data are secured here.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <span></span>
+                        <div class="icon-wrapper">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <h3>SEARCH WITH FILTERS</h3>
+                        <p>
+                            Get all the government welfare schemes and private NGOs by applying filters.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <span></span>
+                        <div class="icon-wrapper">
+                            <i class="fa-sharp fa-solid fa-person-dress"></i>
+                        </div>
+                        <h3>All SCHEMES AT ONE PLACE</h3>
+                        <p>
+                           Get complete information about about any women welfware schemes and get notification according to your account.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="about-us">
+        <div class="sontainer">
+            <div class="content-section">
+                <div class="title">
+                    <h1>ABOUT US</h1>
+                </div>
+                <div class="content">
+                    <h3>THIS IS TEAM ZEROES.</h3>
+                    <H3>OUR MAIN AIM IS TO CREATE A WEBSITE WHERE WOMEN CAN GET INFORMATION REGARDING ALL THE GOVERNMENT WELFARE SCHEMES AND PRIVATE NGOs PROGRAM BY APPLYING FILTERS AND SECURED WITH END TO END ENCRPTION AND BLOCKCHAIN.</H3>
+                    <p>
+                        <ul>
+                            <li>By applying the filters the females can get access to all the schemes according to the filters they choose.</li>
+                            <li>They can also get complete information about the schemes from here like the last date for applying,domicile factors.</li>
+                            <li> We tried to make it more open source as there may be some chances that we miss some schemes.People can add schemes here.
+                                It will be verfied by our team.</li>
+                            <li>By using filters they will get all scholarships, schemes and programs for which they are eligible. </li>
+                        </ul>
+                        
+                       
+                       
+                    </p>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="zero.jpg">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("denu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "close.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+    </script>
+
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+
+
+</html>
